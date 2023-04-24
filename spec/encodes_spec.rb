@@ -5,7 +5,7 @@ RSpec.describe Encodes do
     @encode = Encodes.new("./data/encodes.csv")
   end
 
-  it 'exists & is an array' do
+  it 'exists' do
     expect(@encode).to be_an_instance_of(Encodes)
   end
 
