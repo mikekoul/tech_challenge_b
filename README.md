@@ -16,13 +16,17 @@ Begin by cloning down the program and run a bundle to install gems
 
 `$ bundle install`
 
-## API Keys
+## Run the Program
 
-## API Endpoints and Example Output
+`$ ruby runner.rb`
 
-### Output
+## Run the Test Suite
 
-Returns a JSON formatted hash with the long URL as the key and the click count as the value.
+`$ bundle exec rspec`
+
+### Program Output
+
+Returns a sorted array of JSON objects with the long URL as the key and the click count as the value.
 ```
   [
     {"https://youtube.com"=>557},
