@@ -2,8 +2,9 @@
 Take Home Challenge
 
 ## Overview
+The Challenge - Analyze data from two different data sets and return the number of clicks specifically from 2021 for each record in the csv data set. The program should output an sorted array of JSON objects containing the long URL as the key and the click count as the value. The array should be sorted descending by click count.
 
-
+Example: [{"https://google.com": 3}, {"https://www.twitter.com": 2}]
 
 ## Technologies/Gems
   - Ruby
