@@ -9,7 +9,7 @@ class ClickCounter
     @decode_results = Decodes.new(json_file).parse_2021_entries 
   end
 
-  def count_clicks(encode_results, decode_results)
+  def count_clicks
     result_hash = {}
 
     d_results = @decode_results.map { |d| d['bitlink'][-7..-1] }
@@ -22,6 +22,7 @@ class ClickCounter
     end
 
     format_array = result_hash.map { |long_url, count| { long_url => count } }
-    format_array.sort_by { |entry| -entry.values.first }  
+    a = format_array.sort_by { |entry| -entry.values.first }  
+    require 'pry'; binding.pry 
     end
 end

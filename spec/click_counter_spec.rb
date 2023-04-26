@@ -12,7 +12,7 @@ RSpec.describe ClickCounter do
   end
 
   it 'can count the matching entries for each bitlink and format the data in descending order' do
-    expect(@click_counter.count_clicks(@encode_results, @decode_results)).to eq(
+    expect(@click_counter.count_clicks).to eq(
       [{"https://youtube.com/"=>557},
       {"https://twitter.com/"=>512},
       {"https://reddit.com/"=>510},
