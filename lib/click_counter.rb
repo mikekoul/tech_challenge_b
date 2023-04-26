@@ -24,5 +24,4 @@ class ClickCounter
     format_array = result_hash.map { |long_url, count| { long_url => count } }
     format_array.sort_by { |entry| -entry.values.first }
   end
-
 end
