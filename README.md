@@ -20,13 +20,9 @@ Begin by cloning down the program and run a bundle to install gems
 
 `$ ruby runner.rb`
 
-## Run the Test Suite
-
-`$ bundle exec rspec`
-
 ### Program Output
 
-Returns a sorted array of JSON objects with the long URL as the key and the click count as the value.
+Returns a sorted array of JSON objects with the long URL as the key and the click count as the value for the year 2021.
 ```
   [
     {"https://youtube.com"=>557},
@@ -37,6 +33,12 @@ Returns a sorted array of JSON objects with the long URL as the key and the clic
     {"https://google.com"=>492}
   ]
  ```
+## Run the Test Suite
+
+`$ bundle exec rspec`
+
+## Future Improvements 
+- Add argument to Decode method `parse_2021_entries` to parse out different years other than 2021 which is hard coded at the moment.  Change name of method to `parse_entries_by_year`. 
 
 
 ## Contributors
