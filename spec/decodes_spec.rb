@@ -28,6 +28,5 @@ RSpec.describe Decodes do
     "remote_ip"=> "4.14.244.85"
   }])
   end 
-
-
+  
 end
