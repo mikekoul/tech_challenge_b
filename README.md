@@ -47,7 +47,7 @@ Returns a sorted array of JSON objects with the long URL as the key and the clic
 
 ## Future Improvements 
 - Add argument to Decode method `parse_2021_entries` to parse out different years other than 2021 which is hard coded at the moment.  Change name of method to `parse_entries_by_year`. 
-- Since all the long form URL values were seven digits I used a range when evaluating the `['bitlink']` key from the json file. To make the program less dependent on that value being seven digits long I would split the string at each ` / ` and evaluate only that section of the string. 
+- Since all the long form URL values were seven digits I used a range when evaluating the `['bitlink']` key from the json file. To make the program less dependent on that value being seven digits, long I would `split` the string at each ` / ` and evaluate only that section of the string. 
 - Add error handling and sad path testing to build a more robust program and test suite.
 
 
