@@ -20,28 +20,19 @@ Begin by cloning down the program and run a bundle to install gems
 
 ## API Endpoints and Example Output
 
-### `GET /api/v1/forecast?location={{search_location}}`
+### Output
 
-Returns a JSON formatted hash with the current weather, daily forecasts for the next five days, and hourly forecasts for the next eight hours
-
+Returns a JSON formatted hash with the long URL as the key and the click count as the value.
 ```
-{
-    "data": {
-        "id": null,
-        "type": "forecast",
-        "attributes": {
-            "current_weather": {
-                "datetime": "September 29 2022, 7:28 AM",
-                "sunrise": "September 29 2022, 6:54 AM",
-                "sunset": "September 29 2022, 6:46 PM",
-                "temperature": 60.19,
-                "feels_like": 58.15,
-                "humidity": 48,
-                "uvi": 0,
-                "visibility": 10000,
-                "conditions": "scattered clouds",
-                "icon": "03d"
- 
+  [
+    {"https://youtube.com"=>557},
+    {"https://twitter.com"=>512},
+    {"https://reddit.com"=>510},
+    {"https://github.com"=>497},
+    {"https://linkedin.com"=>496},
+    {"https://google.com"=>492}
+  ]
+ ```
 
 
 ## Contributors
