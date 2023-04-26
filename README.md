@@ -33,12 +33,13 @@ Returns a sorted array of JSON objects with the long URL as the key and the clic
     {"https://google.com"=>492}
   ]
  ```
-## Run the Test Suite
+## Run Test Suite
 
 `$ bundle exec rspec`
 
 ## Future Improvements 
 - Add argument to Decode method `parse_2021_entries` to parse out different years other than 2021 which is hard coded at the moment.  Change name of method to `parse_entries_by_year`. 
+- Add error handling and sad path testing to build a more robust program
 
 
 ## Contributors
