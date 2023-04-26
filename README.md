@@ -4,7 +4,7 @@ Take Home Challenge
 ## Overview
 The Challenge - Analyze data from two different data sets and return the number of clicks specifically from 2021 for each record in the csv data set. The program should output an sorted array of JSON objects containing the long URL as the key and the click count as the value. The array should be sorted descending by click count.
 
-Example: [{"https://google.com": 3}, {"https://www.twitter.com": 2}]
+Example: [{"https://google.com"=>3}, {"https://www.twitter.com"=>2}]
 
 ## Technologies/Gems
   - Ruby
@@ -22,7 +22,7 @@ Begin by cloning down the program and run a bundle to install gems
 
 ### Program Output
 
-Returns a sorted array of JSON objects with the long URL as the key and the click count as the value for the year 2021.
+Returns a sorted array of JSON objects with the long URL as the key and the click count as the value for the year 2021
 ```
   [
     {"https://youtube.com"=>557},
@@ -40,9 +40,9 @@ Returns a sorted array of JSON objects with the long URL as the key and the clic
 ## Process
 - I choose to use Ruby for this challenge because it is the language in which I am most proficient. Since GO does not have an established framework I used standard Ruby over Ruby on Rails. 
 - After reading through the prompt multiple times I broke the steps down into three classes and a runner file to run the program.
-- The Encodes class would handle transforming the csv file into an array of hashes in order for me to interate through it later.
-- The Decodes class would handle parsing the json file returning only the entries from the year 2021.
-- The ClickCounter class would handle iterating through the Encodes class array and the Decodes class array, counting each instance the value of the `['hash']` key from the Encodes array matched the last 7 digits of `['bitlink']` key value long form URL from the Decodes array. I did this by mapping the last 7 digits of the `['bitlink']` key and returning an array of only those objects, then counted the ones that matched each `['hash']` key and formatted them together as a key value pair with the `['long_url']` as the key and count being the value. 
+- The Encodes class handled transforming the csv file into an array of hashes in order for me to interate through it later.
+- The Decodes class handled parsing the json file returning only the entries from the year 2021.
+- The ClickCounter class handled iterating through the Encodes class array and the Decodes class array, counting each instance the value of the `['hash']` key from the Encodes array matched the last 7 digits of `['bitlink']` key value long form URL from the Decodes array. I did this by mapping the last 7 digits of the `['bitlink']` key and returning an array of only those objects, then counted the ones that matched each `['hash']` key and formatted them together as a key value pair with the `['long_url']` as the key and count being the value. 
 - Finally the runner file would initiate a new instance of the ClickCounter class with the csv and json files as arguments and execute the `count_clicks` method and return the output. 
 
 ## Future Improvements 
@@ -51,5 +51,5 @@ Returns a sorted array of JSON objects with the long URL as the key and the clic
 - Add error handling and sad path testing to build a more robust program and test suite.
 
 
-## Contributors
+## Contributor
   - [Michael Koulouvaris](https://github.com/mikekoul)
